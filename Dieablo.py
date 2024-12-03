@@ -193,25 +193,6 @@ def main():
         name_from_weapon_types = random_item_from_weapon_types[0]
         number_from_weapon_types = random_item_from_weapon_types[1]
 
-        # Weapon type generation
-        # --------------------------------------------------
-        # Picks a random key from the weapon_types dictionary
-        def pick_random_key_from_weapon_types(d: weapon_types):
-           keys = list(d.keys())
-           random_key_from_weapon_types = random.choice(keys)
-           return random_key_from_weapon_types
-
-        # Picks a random item from the weapon_types dictionary based on the generated key
-        def pick_random_item_from_weapon_types(d: weapon_types):
-           random_key_from_weapon_types = pick_random_key_from_weapon_types(d)
-           random_item_from_weapon_types = random_key_from_weapon_types, d[random_key_from_weapon_types]
-           return random_item_from_weapon_types
-
-        # Defines the random item from weapon_types as a variable, then splits the tuple into name and number
-        random_item_from_weapon_types = pick_random_item_from_weapon_types(weapon_types)
-        name_from_weapon_types = random_item_from_weapon_types[0]
-        number_from_weapon_types = random_item_from_weapon_types[1]
-
         # Armour type generation
         # --------------------------------------------------
         # Picks a random key from the weapon_types dictionary
